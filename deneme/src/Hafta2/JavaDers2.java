@@ -3,9 +3,9 @@ package Hafta2;
 import java.io.IOException;
 import java.util.Scanner;
 	class DortIslem7{
-		double Sonuc;
+		double Sonuc;//sonuc küçük harfle baþlamalý.
 		double a,b;
-		public void setSayi(double a, double b)
+		public void setSayi(double a, double b) //set methodu deðiþkenleri aldýðý için her methodda deðiþken alma iþlemine gerek kalmýyor.
 		{
 			this.a=a;
 			this.b=b;
@@ -49,7 +49,7 @@ public class JavaDers2 {
 	}
 	
 	public static void main(String[] args) throws IOException {
-		int tekrar=4;
+		
 		DortIslem7 Toplat= new DortIslem7();
 		System.out.println("Ýlk sayýyý giriniz.");
 		Scanner input1=new Scanner(System.in);
@@ -61,6 +61,7 @@ public class JavaDers2 {
 		//Buraya iþlem eleminasyonu koy.
 		Scanner input3=new Scanner(System.in);
 		char islem=(char)System.in.read();
+		//Toplat.Setsayi(a,b); kullanýp aþaðýdaki iþlemlerde a ve b yi parametre kýsmýndan sileriz.
 	switch(islem)
 	{
 	case '+': islem='+';
